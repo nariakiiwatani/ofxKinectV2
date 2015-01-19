@@ -111,6 +111,10 @@ ofPixels ofxKinectV2::getRgbPixels(){
 }
 
 //--------------------------------------------------------------------------------
+ofFloatPixels ofxKinectV2::getRawDepthPixels(){
+	return rawDepthPixels;
+}
+//--------------------------------------------------------------------------------
 void ofxKinectV2::close(){
     if( bOpened ){
         waitForThread(true);
